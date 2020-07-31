@@ -5,12 +5,13 @@ import { IonLabel } from "@ionic/react";
 interface ContainerProps {}
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
+  const myStringTypedVariable = "test";
   return (
     <div className="container">
       <IonLabel
         data-number-value={42}
         data-no-value-needed
-        data-explicit-string-value="myValue"
+        data-variable-string-value={myStringTypedVariable}
       >
         <strong>Ready to create an app?</strong>
       </IonLabel>
@@ -18,6 +19,7 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
         data-number-value={42}
         data-no-value-needed
         data-explicit-string-value="myValue"
+        data-variable-string-value={myStringTypedVariable}
       >
         Start with Ionic{" "}
         <a

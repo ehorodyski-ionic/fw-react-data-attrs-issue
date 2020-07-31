@@ -12,6 +12,7 @@ The following `data` attributes will not render in the DOM:
 However, the following data attribute will render in the DOM:
 
 - `data-explicit-string-value="myValue"`
+- `data-variable-string-value={myStringTypedVariable}`
 
 When using standard HTML tags, the data attributes will be rendered in the DOM.
 
